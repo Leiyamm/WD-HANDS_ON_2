@@ -1,0 +1,93 @@
+.header-hero1 {
+    background-color: rgba(133, 29, 15, 0.349);
+    color: rgb(190, 60, 60);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 1000; 
+}
+
+.header-hero1 img {
+    height: 80px; /* Adjust height as needed */
+    margin-right: 20px; /* Space between logo and text */
+}
+
+.header-hero1 h1 {
+    margin: 0;
+    font-size: 2em;
+    padding-left: 20px;
+}
+
+.header-hero1 nav {
+    display: flex;
+    gap: 10px;
+}
+
+.header-hero1 button {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #420404;
+    background-color: rgba(231, 50, 50, 0.801);
+    border: 2px solid #2c0606;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-hero1 button:hover {
+    background-color: #9b3333;
+    color: rgb(252, 92, 92);
+}
+
+.hero1-body {
+    background-image: url('../img/hero1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    transition: background 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px; 
+}
+
+.hero1-body.hero1-animated {
+    background-image: url('../img/hero1.gif');
+}
+
+.hero-card {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #f30404;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.hero1-card {
+    background-color: rgba(255, 117, 117, 0.459);
+}
+
+.hero1-card:hover {
+    background-color: rgba(255, 103, 103, 0.836);
+}
+
+.hero-card h2, .hero-card h3, .hero-card p {
+    margin: 10px 0;
+}
+
+.hero-card p {
+    word-wrap: break-word;
+    font-size: 1.15em;
+    max-width: 100%;
+}
