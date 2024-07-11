@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    overflow: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -18,7 +18,7 @@ body {
     align-items: center;
     position: relative;
     top: 0;
-    width: 99.2%;
+    width: 100%; /* Full width */
     z-index: 1;
 }
 
@@ -27,6 +27,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 20px; /* Add padding to center content and adjust spacing */
 }
 
 .left-nav, .right-nav {
@@ -61,9 +62,9 @@ nav button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: calc(100vh - 80px); /* Adjust height considering the header height */
     padding: 20px;
     position: relative;
+    min-height: calc(100vh - 80px); /* Adjust height considering the header height */
 }
 
 .card {
@@ -76,14 +77,11 @@ nav button:hover {
     color: rgb(232, 119, 255);
     transition: transform 0.3s, background-color 0.3s;
     cursor: pointer;
-    width: 20%; /* Adjust width as needed */
+    width: 90%; /* Adjust width as needed */
+    max-width: 400px; /* Limit maximum width for larger screens */
     margin-bottom: 20px;
-    position: absolute;
-    top: 80px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
+    border-radius: 20px; /* Adjust border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example: Add box shadow for depth */
 }
 
 .card:hover {
@@ -110,12 +108,10 @@ nav button:hover {
 .application-box {
     background-color: rgba(200, 162, 200, 0.8);
     padding: 20px;
-    margin-top: 200px;
-    width: 20%;
+    margin-top: 20px; /* Adjust margin for spacing */
+    width: 90%; /* Adjust width as needed */
+    max-width: 400px; /* Limit maximum width */
     text-align: left;
-    position: absolute;
-    top: 150px;
-    left: 15%;
     font-size: 1.5em;
 }
 
@@ -140,11 +136,10 @@ nav button:hover {
 }
 
 .founder-gallery {
-    margin-top: 200px;
-    width: 30%; 
-    position: absolute;
-    top: 150px;
-    right: 15%;
+    margin-top: 20px; /* Adjust margin for spacing */
+    width: 90%; /* Adjust width as needed */
+    max-width: 600px; /* Limit maximum width */
+    position: relative;
 }
 
 .founders-title {
@@ -180,4 +175,26 @@ nav button:hover {
 .founder-avatar {
     height: 70px;
     margin-top: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 10px;
+    }
+    
+    .card {
+        width: 100%; /* Make card full width on smaller screens */
+        max-width: none; /* Remove max-width on smaller screens */
+    }
+    
+    .application-box {
+        width: 100%; /* Make application box full width on smaller screens */
+        max-width: none; /* Remove max-width on smaller screens */
+    }
+    
+    .founder-gallery {
+        width: 100%; /* Make founder gallery full width on smaller screens */
+        max-width: none; /* Remove max-width on smaller screens */
+    }
 }
