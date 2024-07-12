@@ -33,8 +33,7 @@ WD-HANDSON2
 │ │ │ ├── css
 │ │ │ │ └── styles.css
 │ │ │ ├── img
-│ │ │ ├── js
-│ │ │ ├ └── styles.css
+│ │ │ └── js
 │ │ └── index.html
 │ │ ├── hero1
 │ │ │ ├── assets

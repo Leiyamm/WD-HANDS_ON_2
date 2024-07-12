@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Card Gallery</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> <!-- For Demon Slayer Card -->
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet"> <!-- For Bludshot Card -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> <!-- For Nova Card -->
+    <link href="https://fonts.googleapis.com/css2?family=Kite+One&display=swap" rel="stylesheet"> <!-- For WayFinder Card -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> <!-- For Main Card -->
 </head>
 <body>
     <header>
@@ -12,12 +17,51 @@
         <button onclick="location.href='../../index.html'">Back to Home</button>
     </header>
     <main>
-        <section>
-            <div class="animated-card">Card 1</div>
-            <div class="animated-card">Card 2</div>
-            <div class="animated-card">Card 3</div>
-            <div class="animated-card">Card 4</div>
-            <div class="animated-card">Card 5</div>
+        <section class="card-section">
+            <div class="hero-card hero1-card demon-slayer-font">
+                <h2>Demon Slayer</h2>
+                <h3>Hashira Training Arc</h3>
+                <p>Tanjiro and his comrades undergo training under the Pillars of the Demon Slayer Corps. With Nezuko kept somewhere safe, will Tanjiro be able to hone his skills in preparation against the Demon King Muzan?</p>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="bludshot-card bludshot-font" onclick="changeBackground()">
+                <img src="../animatedstyles/assets/img/bludshot-logo.png" alt="Bludshot Logo" class="bludshot-logo">
+                <p class="bludshot-description">Nu-metal done heavy, done right.</p>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="nova-card nova-font">
+                <div class="card-title">Nova+</div>
+                <div class="card-subtitle">The Casanova Guild</div>
+                <div class="card-description">The guild of stars, castles of memories and glory</div>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="wf-card wayfinder-font">
+                <img src="assets/img/wftitle.png" alt="WayFinder Title" class="card-title-img">
+                <div class="card-description">
+                    Commuting has never been made this easy! With WayFinder you can now plan your next ride, track your balance, and be alarmed of traffic conditions!
+                </div>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="main-card main-font" id="main-card">
+                <h1>Leiyam</h1>
+                <img src="assets/img/leiyampfp.png" alt="Profile Picture" class="profile-pic">
+                <div class="card-content">
+                    <p>Hey there! Check out my other social media!</p>
+                    <nav>
+                        <ul>
+                            <li><a href="../hero1/index.html">Hero 1</a></li>
+                            <li><a href="../hero2/index.html">Hero 2</a></li>
+                            <li><a href="../hero3/index.html">Hero 3</a></li>
+                            <li><a href="../hero4/index.html">Hero 4</a></li>
+                            <li><a href="../herostyles/index.html">Hero Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </section>
     </main>
 </body>

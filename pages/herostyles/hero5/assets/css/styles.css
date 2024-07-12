@@ -1,0 +1,201 @@
+body {
+    font-family: 'VT323', monospace;
+    margin: 0;
+    padding: 0;
+    background: url('../../../../herostyles/hero5/assets/img/leiyambackground.png') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b86e0d;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9b6208;
+}
+
+.main-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    color: #ff9100;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1; /* Ensure main card appears above background */
+}
+
+.main-card h1 {
+    margin: 1;
+    padding: 0;
+    font-size: 2em;
+}
+
+.main-card:hover {
+    background-color: #ffc83d;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    animation: teeter 0.5s infinite alternate;
+}
+
+@keyframes teeter {
+    0% { transform: translate(-50%, -50%) rotate(-2deg); }
+    100% { transform: translate(-50%, -50%) rotate(2deg); }
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-content {
+    display: none;
+}
+
+.main-card:hover .profile-pic {
+    transform: scale(1.2);
+}
+
+.main-card:hover .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-card {
+    cursor: pointer;
+    position: absolute;
+    width: 200px; /* Adjusted width for better visibility */
+    height: 100px; /* Adjusted height for better visibility */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    background-color: transparent;
+    border: 2px solid transparent;
+    z-index: 1; /* Ensure link buttons appear above background */
+}
+
+.social-media-logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.social-media-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-media-card:hover {
+    background-color: white;
+    border-color: white;
+    transform: scale(1.1);
+}
+
+.discord-card {
+    top: 40%;
+    right: 15%;
+}
+
+.discord-card:hover {
+    background-color: #ffffff;
+    border-color: #5865f2;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjusted width for better visibility */
+    height: 100px; /* Adjusted height for better visibility */
+}
+
+.youtube-card {
+    top: 60%;
+    right: 15%;
+}
+
+.youtube-card:hover {
+    background-color: #ffffff;
+    border-color: #c12025;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjusted width for better visibility */
+    height: 100px; /* Adjusted height for better visibility */
+}
+
+.twitch-card {
+    top: 40%;
+    left: 15%;
+}
+
+.twitch-card:hover {
+    background-color: #ffffff;
+    border-color: #6441a5;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjusted width for better visibility */
+    height: 100px; /* Adjusted height for better visibility */
+}
+
+.twitter-card {
+    top: 60%;
+    left: 15%;
+}
+
+.twitter-card:hover {
+    background-color: #ffffff;
+    border-color: #41a2f3;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjusted width for better visibility */
+    height: 100px; /* Adjusted height for better visibility */
+}
+
+.social-media-content {
+    display: none;
+    text-align: left;
+    margin-left: 10px;
+    color: black;
+}
+
+.social-media-card:hover .social-media-content {
+    display: block;
+}
+
+.social-media-card.discord-card:hover {
+    transform: translateX(-100px);
+}
+
+.social-media-card.youtube-card:hover {
+    transform: translateX(-100px);
+}
+
+.social-media-card.twitch-card:hover {
+    transform: translateX(100px);
+}
+
+.social-media-card.twitter-card:hover {
+    transform: translateX(100px);
+}
